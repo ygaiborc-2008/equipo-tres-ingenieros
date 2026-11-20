@@ -1,2 +1,6 @@
 Descripción del proyecto  
-Descripcion: proyecto para practicar Git y GitHub en equipo
+Creamos un repositorio público en GitHub.
+- Clonamos el repositorio en nuestras computadoras.
+- Creamos y modificamos archivos con la información del equipo.
+- Registramos los cambios con `git add`, `git commit` y `git push`.
+- Consultamos el historial con `git log` y trabajamos juntos con commits de cada integrante.
