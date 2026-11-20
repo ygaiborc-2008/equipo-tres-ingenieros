@@ -2,3 +2,4 @@ ROLES
 Yislley: Coordinadora
 Alan: Desarollador
 Domenica: Diseñadora
+Nombre Apellido: Rol del integrante
