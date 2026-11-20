@@ -1,4 +1,4 @@
 ROLES
 Yislley: Coordinadora
-Alan: 
+Alan: Desarollador
 Domenica: Diseñadora
