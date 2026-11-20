@@ -1,1 +1,2 @@
 Descripción del proyecto  
+Descripcion: proyecto para practicar Git y GitHub en equipo
