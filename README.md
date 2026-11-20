@@ -6,4 +6,4 @@ Repositorio del **Examen Práctico 2** de Introducción a la Ingeniería.
 Este proyecto muestra el uso básico de **Git** y **GitHub** para controlar versiones de archivos y trabajar en equipo. Git guarda el historial de cambios de un proyecto, y GitHub permite publicarlo en línea para que varias personas lo consulten y colaboren.
 
 ## Objetivo
-Comprender y aplicar los conceptos básicos del control de versiones para gestionar cambios en archivos y desarrollar actividades colaborativas.
+Aplicar los conceptos básicos del control de versiones mediante Git y GitHub, para gestionar los cambios en los archivos del proyecto y trabajar de forma colaborativa, registrando el aporte de cada integrante con commits descriptivos.
