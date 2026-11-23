@@ -4,3 +4,4 @@ Creamos un repositorio público en GitHub.
 - Creamos y modificamos archivos con la información del equipo.
 - Registramos los cambios con `git add`, `git commit` y `git push`.
 - Consultamos el historial con `git log` y trabajamos juntos con commits de cada integrante.
+file:///C:/Users/Vanessa%20Cano/Desktop/P%C3%A1gina%20Web%20del%20proyecto%20de%20grado/pagina.html
