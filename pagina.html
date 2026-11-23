@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChocoKass | Chocolatería Fina</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;500;600;700;800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Pantalla de sistema informatico-->
+<div id="loginScreen" class="login-screen">
+  <form id="loginForm" class="login-form">
+    <h2>Iniciar Sesión</h2>
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required />
+    
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required />
+    
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required />
+    
+    <button type="submit">Entrar</button>
+  </form>
+</div>
+
+
+  <div class="joinchat" id="joinchat">
+  <div class="joinchat-button" onclick="toggleChat()">
+    <img src="social.png" alt="WhatsApp" />
+    <span class="joinchat-tooltip">🛵¡Escribenos!</span>
+  </div>
+
+  <div class="joinchat-window" id="chatWindow">
+    <div class="joinchat-header">
+      <span>Join Chat</span>
+      <span class="joinchat-close" onclick="toggleChat()">✖</span>
+    </div>
+    <div class="joinchat-body">
+      <p>¡Hola!🖐🏻¿En qué podemos ayudarte?</p>
+      <a href="https://wa.me/593967708373" target="_blank" class="joinchat-open">Abrir chat</a>
+    </div>
+  </div>
+</div>
+
+
+   
+  <header class="header">
+    <div class="menu container">
+     <a href="#" class="logo">ChocoKass</a>
+     <input type="checkbox" id="menu">
+     <label for="menu">
+      <img src="menu (2).png" alt="menu">
+     </label>
+     <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+     </nav>
+      <div>
+          <ul>
+            <li class="submenu">
+               <img src="carro-de-compras-forma-negra (1).png" id="img-carrito" alt="">
+               <div id="carrito">
+                 <table id="lista-carrito">
+                   <thead>
+                     <tr>
+                       <th>Imagen</th>
+                       <th>Nombre</th>
+                       <th>Precio</th>
+                       <th></th>
+                     </tr>
+                   </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                      <tr>
+                        <th colspan="2"></th>
+                        <th><strong>Total:</strong></th>
+                        <th id="total">$0.00</th>
+                      </tr>
+                    </tfoot>
+                 </table>
+                   <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                   <a href="#" id="btn-comprar" class="btn-3">Comprar</a>
+               </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+    </header>
+
+     <header class="hero-slider">
+  <div class="slide active">
+    <img src="porta.jpg" alt="Cacao fino de aroma">
+    <div class="slide-text">
+      <h1>100% CACAO FINO DE AROMA</h1>
+      <p>Estamos creando las más deliciosas experiencias de chocolate para ti y quienes más quieres.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="choco3" alt="Bombones artesanales">
+    <div class="slide-text">
+      <h1>BOMBONES ARTESANALES</h1>
+      <p>Elaborados con dedicación, pasión y el mejor cacao ecuatoriano.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="choco4" alt="Regalos perfectos">
+    <div class="slide-text">
+      <h1>REGALOS PERFECTOS</h1>
+      <p>Comparte dulzura y calidad con nuestras presentaciones exclusivas.</p>
+    </div>
+  </div>
+
+  <!-- Flechas -->
+  <button class="prev-slide">&#10094;</button>
+  <button class="next-slide">&#10095;</button>
+
+  <!-- Indicadores -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</header>
+  
+
+
+   <section class="oferts container" id="lista-1">
+       <h2>Nuestras ofertas</h2>
+       <p>
+        Aqui encontraras las diferentes promociones de sabores de nuestros productos, que son totalmente artesanales,
+        elaborados con chocolate real e insumos de calidad, que hacen que nuestros postres sean unicos e inconfundibles.¡No dejes pasar 
+        estas oportunidades unicas y endulza tu dia con ChocoKass!.
+
+        
+       </p>
+
+       <div class="oferts-content">
+
+        <div class="ofert-1">
+          <span class="etiqueta-oferta-diagonal">OFERTA</span>
+              <img src="caja23" alt="">
+               <div class="product-txt">
+                  <h3>Caja de cumpleaños</h3>
+                  <p>Incluye chocolates artesanales y bombones rellenos de manjar</p>
+                  <p class="precio">$12.00</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
+                  
+               </div>
+        </div>
+         <div class="ofert-1">
+          <span class="etiqueta-oferta-diagonal">OFERTA</span>
+              <img src="cajamixta.jpg" alt="">
+               <div class="product-txt">
+                  <h3>Caja de mixta de 15 unidades</h3>
+                  <p>Contiene 15 unidades entre trufas y bombones</p>
+                  <p class="precio">$17.50</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar</a>
+                  
+               </div>
+        </div>
+
+        <div class="logan-1">
+            <h3>ChocoKass</h3>
+            <p>Productos</p>
+            <a href="#" class="btn-2">Informacion</a>
+
+        </div>
+
+       </div>
+        
+       <div class="oferts-content">
+           <div class="logan-1">
+            <h3>ChocoKass</h3>
+            <p>Productos</p>
+            <a href="#" class="btn-2">Informacion</a>
+        </div>
+        <div class="ofert-1">
+          <span class="etiqueta-oferta-diagonal">OFERTA</span>
+              <img src="Love.png" alt="">
+               <div class="product-txt">
+                  <h3>Caja mixta LOVE</h3>
+                  <p>Contiene 8 unidades de trufas y bombones de varios sabores mas tableta de relleno"Love"</p>
+                  <p class="precio">$18.00</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar</a>
+          
+               </div>
+        </div>
+         <div class="ofert-1">
+          <span class="etiqueta-oferta-diagonal">OFERTA</span>
+              <img src="bux" alt="">
+               <div class="product-txt">
+                  <h3>Caja mixta para el dia de la madre</h3>
+                  <p>Contiene 10 unidades de trufas y bombones de varios sabores, tableta de 100gr con frutos secos</p>
+                  <p class="precio">$24.00</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar</a>
+                  
+               </div>
+        </div>
+
+       </div>
+   </section>
+
+      <div class="separador">
+
+        <div class="separador-content container">
+
+               <h2>Nuestros mejores productos</h2>
+               <p>
+                Descubre nuestras exclusivas presentaciones de chocolates artesanales, elaborados con ingredientes de la mas alta calidad y dedicacion.
+               </p>
+               <a href="#" class="btn-1">Ordenar ahora</a>
+
+          </div>
+
+        </div>
+
+
+      <main class="product container" id="lista-2">
+          <h2>Postres</h2>
+          <p> Conoce y prueba postres a base de chocolate 100% cacao fino</p>
+          <div class="product-content">
+            <div class="ofert-1">
+              <img src="tableta.jpg" alt="">
+               <div class="product-txt">
+                  <h3>Tabletas de chocolate</h3>
+                  <p>Chocolate con leche elaborado con cacao ecuatoriano fino de aroma, para disfrutar de un sabor suave y tradicional que encanta a todos los paladares.</p>
+                  <p class="precio">$3.75</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar</a>
+               </div>
+            </div>
+
+                <div class="ofert-1">
+              <img src="imagen9.jpeg" alt="">
+               <div class="product-txt">
+                  <h3>Bolitas de chocolate</h3>
+                  <p>Hechas con leche condensada y coco rallado</p>
+                  <p class="precio">$0.70</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar</a>
+               </div>
+            </div>
+
+                <div class="ofert-1">
+              <img src="dubai11.jpg" alt="">
+               <div class="product-txt">
+                  <h3>Chocolate de dubai</h3>
+                  <p>Tableta de chocolate con leche rellena de una mezcla de crema de pistacho y kadayif </p>
+                  <p class="precio">$12.00</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar</a>
+               </div>
+            </div>
+
+                <div class="ofert-1">
+              <img src="mousse.jpg" alt="">
+               <div class="product-txt">
+                  <h3>Mousse de chocolate con cafe</h3>
+                  <p>Un postre elegante y cremoso que combina la intensidad del cafe con la textura del chocolate</p>
+                  <p class="precio">$3.50</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar</a>
+               </div>
+            </div>
+
+                <div class="ofert-1">
+              <img src="bocad.jpg" alt="">
+               <div class="product-txt">
+                  <h3>Bocaditos de arandanos con chocolate blanco</h3>
+                  <p>Peueños y deliciosos bocaditos que combinan el arandano con el chocolate blanco, ideales como
+                    snack gourmet
+                  </p>
+                  <p class="precio">$2.50</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar</a>
+               </div>
+            </div>
+
+                <div class="ofert-1">
+              <img src="galleta.jpg" alt="">
+               <div class="product-txt">
+                  <h3>Galletas con chocolate</h3>
+                  <p>Gallletas crujientes cubiertas con una fina capa de chocolate negro por encima</p>
+                  <p class="precio">$2.85</p>
+                  <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar</a>
+               </div>
+            </div>
+              
+          </div>
+
+      </main>
+
+    
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<section class="testimonios container">
+  <h2>Opiniones de nuestros clientes</h2>
+
+  <div class="testimonios-slider">
+    <button class="prev-test">&#10094;</button>
+
+    <div class="testimonios-wrapper">
+      <!-- 1 -->
+      <div class="testimonio">
+        <div class="burbuja">
+          <span class="comillas">“</span>
+          <p class="stars">★★★★★</p>
+          <p>Delicious! Amazingly beautiful. Can't believe the care that goes into making them.</p>
+          <div class="fb-logo"><i class="fab fa-facebook"></i></div>
+        </div>
+        <div class="cliente">
+          <img src="descarga.jpg" alt="Cliente 1">
+          <h4>MARCY KERSTEN</h4>
+          <span>JUNIO 30, 2015</span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="testimonio">
+        <div class="burbuja">
+          <span class="comillas">“</span>
+          <p class="stars">★★★★★</p>
+          <p>💗 Se los recomiendo riquísimo 😋</p>
+          <div class="fb-logo"><i class="fab fa-facebook"></i></div>
+        </div>
+        <div class="cliente">
+          <img src="images.jpg" alt="Cliente 2">
+          <h4>ULLAURI VANESSA</h4>
+          <span>FEBRERO 1, 2019</span>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="testimonio">
+        <div class="burbuja">
+          <span class="comillas">“</span>
+          <p class="stars">★★★★★</p>
+          <p>Alguien me los regaló por mi cumpleaños, no había tenido el placer de probarlos y me llevé una deliciosa sorpresa.</p>
+          <div class="fb-logo"><i class="fab fa-facebook"></i></div>
+        </div>
+        <div class="cliente">
+          <img src="images (2).jpg" alt="Cliente 3">
+          <h4>ANDREA LÓPEZ</h4>
+          <span>ABRIL 5, 2023</span>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="testimonio">
+        <div class="burbuja">
+          <span class="comillas">“</span>
+          <p class="stars">★★★★★</p>
+          <p>Excelente atención y chocolates exquisitos. ¡Recomendado al 100%!</p>
+          <div class="fb-logo"><i class="fab fa-facebook"></i></div>
+        </div>
+        <div class="cliente">
+          <img src="descarga (2).jpg" alt="Cliente 4">
+          <h4>KEVIN TORRES</h4>
+          <span>JULIO 18, 2022</span>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="testimonio">
+        <div class="burbuja">
+          <span class="comillas">“</span>
+          <p class="stars">★★★★★</p>
+          <p>Un detalle perfecto para regalar, presentación muy linda y sabor espectacular.</p>
+          <div class="fb-logo"><i class="fab fa-facebook"></i></div>
+        </div>
+        <div class="cliente">
+          <img src="descarga (3).jpg" alt="Cliente 5">
+          <h4>CARLA MEJÍA</h4>
+          <span>MARZO 12, 2024</span>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="testimonio">
+        <div class="burbuja">
+          <span class="comillas">“</span>
+          <p class="stars">★★★★★</p>
+          <p>Simplemente deliciosos. Se nota el amor con el que están hechos.</p>
+          <div class="fb-logo"><i class="fab fa-facebook"></i></div>
+        </div>
+        <div class="cliente">
+          <img src="images (1).jpg" alt="Cliente 6">
+          <h4>DAVID HERRERA</h4>
+          <span>AGOSTO 2, 2023</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="next-test">&#10095;</button>
+  </div>
+</section>
+
+ <!-- Modal Oferta -->
+<div id="modalOferta" class="modal">
+  <div class="modal-content">
+    <span class="cerrar-modal">&times;</span>
+    <h2 id="modalTitulo"></h2>
+    <p id="modalDescripcion"></p>
+    <p id="modalPrecio"></p>
+  </div>
+</div>
+
+
+  <!-- MODAL 1: Selección de forma de pago -->
+<div id="modalPago" class="modal-pago">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2>Selecciona tu forma de pago</h2>
+    <p>Total a pagar: <strong id="montoTotal">$0.00</strong></p>
+
+    <div class="opciones-pago">
+      <div class="metodos-pago">
+  <h3>Métodos de Pago</h3>
+  
+  <!-- Pago con tarjeta -->
+  <div class="pago-tarjeta">
+    <p>Tarjeta de crédito o débito:</p>
+    <div class="iconos-tarjetas">
+      <img src="visa.png" alt="Visa">
+      <img src="paypal.webp" alt="MasterCard">
+      <img src="america.png" alt="American Express">
+      <img src="discover.jpg" alt="Discover">
+    </div>
+  </div>
+</div>
+      <button id="btnEfectivo" class="btn-efectivo">💵Pagar en Efectivo</button>
+      <button id="btnTarjeta" class="btn-tarjeta">💳Pagar con Tarjeta</button>
+    </div>
+  </div>
+</div>
+<!-- MODAL 2: Pago con tarjeta -->
+<div id="modalTarjeta" class="modal-tarjeta">
+  <div class="modal-contenido tarjeta">
+    <span class="cerrar-tarjeta">&times;</span>
+    <h2>Pago con Tarjeta</h2>
+    <form id="formTarjeta">
+      <label>Nombre en la tarjeta</label>
+      <input type="text" required>
+
+      <label>Número de tarjeta</label>
+      <input type="text" maxlength="16" required>
+
+      <label>Fecha de expiración</label>
+      <input type="month" required>
+
+      <label>Código CVV</label>
+      <input type="text" maxlength="3" required>
+
+      <button type="submit" class="btn-pagar">Pagar ahora</button>
+    </form>
+  </div>
+</div> 
+
+
+
+    <script src="script.js"></script>
+    <script>
+  function toggleChat() {
+    const chatWindow = document.getElementById("chatWindow");
+    chatWindow.style.display = chatWindow.style.display === "block" ? "none" : "block";
+  }
+
+</script>
+</body>
+</html>
